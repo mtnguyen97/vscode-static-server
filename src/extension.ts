@@ -4,9 +4,8 @@ import { AddressInfo } from 'net';
 import * as express from 'express';
 import * as vscode from 'vscode';
 import * as cors from 'cors';
-import { close, existsSync, fstat } from 'fs';
+import { existsSync } from 'fs';
 import { Server } from 'http';
-import { on } from 'cluster';
 
 const port = 7357;
 let isServing = false;
